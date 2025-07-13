@@ -1,4 +1,4 @@
-import bcrypt, { hash } from "bcrypt";
+import bcrypt from "bcrypt";
 import jsonwebtoken from "jsonwebtoken";
 import { createUser, findbyemail } from "../models/usermodel.js";
 

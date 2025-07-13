@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 const myjwtsecret = "f6789gh11"; //digunakan sebagai kunci rahasia untuk mengenkripsi dan memverifikasi token JWT
 
 const autmiddleware = (req, res, next) => {
-  const autheader = req.headers.authorization; //digunakan untuk mengambil token jwt dan menyimpannya ke variabel autheaderHeader
+  const autheader = req.headers.authorization; //digunakan untuk mengambil token jwt dan menyimpannya ke variabel autheader
 
   //Jika autheader kosong atau autheader ada isinya tetapi tidak di mulai dengan kata "Bearer "
   if (!autheader || !autheader.startsWith("Bearer ")) {
